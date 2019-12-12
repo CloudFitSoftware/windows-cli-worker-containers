@@ -13,7 +13,7 @@ VOLUME C:\\output
 By default, Docker creates a folder for each Windows container instance in a `C:\ProgramData\Docker\volumes\<container-id>\_data` directory, but this can be overridden during the Docker run command. In the following example, we'll mount the container's `C:\output` directory to a location on the `E:` of the host.
 
 ```Powershell
-docker run -v E:\my_data_host\container_data:C:\output
+docker run -v E:\my_data_host\container_data:C:\output winclisample:dev
 ```
 
 ## Cloud Storage
